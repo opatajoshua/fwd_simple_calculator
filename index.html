@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto'rel='stylesheet'type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <form onsubmit="calculate(event)">
+      <h3 class="title">SIMPLE CALCULATOR</h3>
+      <div class="inputs-box">
+        <input id="first-number" type="number" placeholder="First Number" />
+        <select id="operator">
+          <option value="+">Plus (+)</option>
+          <option value="-"> Minus (-)</option>
+          <option value="*">Times (x)</option>
+          <option value="/"> Divided by (/)</option>
+        </select>
+        <input id="second-number" type="number" placeholder="Second Number">
+      </div>
+      <button type="submit">Calculate</button>
+      <div class="answer-box">
+        <p>Your Answer is:</p>
+        <h1 id="answer-text">330.09</h1>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
